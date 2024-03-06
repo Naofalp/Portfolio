@@ -8,11 +8,13 @@
 h2 {
     color: black;
     font-size: 30px;
-    font-family: Raleway;
     font-weight: 500;
     word-wrap: break-word
 }
 
+p {
+    color: black;
+}
 
 /****** Header ***********/
 
@@ -30,10 +32,10 @@ header {
 
 .nameHeader {
     font-size: 26px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
-nav{
+nav {
     display: flex;
     margin-bottom: 0;
     justify-content: space-around;
@@ -42,7 +44,45 @@ nav{
 
 
 nav a {
-	text-decoration: none;
-	color: #000;
+    text-decoration: none;
+    color: #000;
     font-weight: 500;
+    font-size: 15px;
 }
+
+/****** Banner ***********/
+
+.banner {
+    height: 600px;
+    width: 100%;
+    background-image: url('../images/emile-perron-xrVDYZRGdw4-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.banner p {
+    font-size: 70px;
+    font-weight: 500;
+    color: white;
+    padding-left: 30px;
+}
+
+/****** About ***********/
+
+.about {
+    background-color: #f5f5f5;
+    padding: 100px 300px;
+}
+
+.about h2 {
+    margin-bottom: 30px;
+}
+
+.about p {
+    line-height: 1.5;
+}
+
+/****** X ***********/
