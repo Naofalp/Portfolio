@@ -1,0 +1,48 @@
+/****** General ***********/
+* {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    font-size: 14px;
+}
+
+h2 {
+    color: black;
+    font-size: 30px;
+    font-family: Raleway;
+    font-weight: 500;
+    word-wrap: break-word
+}
+
+
+/****** Header ***********/
+
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 100px;
+    padding-block: 30px;
+}
+
+.nameHeader {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+nav{
+    display: flex;
+    margin-bottom: 0;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+
+nav a {
+	text-decoration: none;
+	color: #000;
+    font-weight: 500;
+}
