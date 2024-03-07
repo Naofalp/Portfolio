@@ -10,6 +10,13 @@ section {
     padding-top: 20px;
 }
 
+@media screen and (max-width: 769px) {
+    section {
+        padding: 0px;
+        padding-bottom: 30px;
+    }
+}
+
 h2 {
     color: black;
     font-size: 30px;
@@ -40,6 +47,13 @@ header {
     padding-block: 30px;
 }
 
+@media screen and (max-width: 610px) {
+    header {
+        padding-inline: 10px;
+        justify-content: center;
+    }
+}
+
 .nameHeader {
     font-size: 26px;
     font-weight: 500;
@@ -50,6 +64,12 @@ nav {
     margin-bottom: 0;
     justify-content: space-around;
     gap: 20px;
+}
+
+@media screen and (max-width: 769px) {
+    nav {
+        flex-wrap: wrap;
+    }
 }
 
 
@@ -81,11 +101,24 @@ nav a {
     padding-left: 30px;
 }
 
+@media screen and (max-width: 769px) {
+    .banner p {
+        font-size: 50px;
+        padding-left: 10px;
+    }
+}
+
 /****** About ***********/
 
 .about {
     background-color: #f5f5f5;
     padding: 100px 300px;
+}
+
+@media screen and (max-width: 769px) {
+    .about {
+        padding: 30px 10px;
+    }
 }
 
 .about h2 {
@@ -211,4 +244,61 @@ background-color: #f5f5f5;
     border-radius: 10px;
     border-color: Black;
     /* Assombrissement de l'image au survol */
+}
+
+
+/****** Contact ***********/
+
+
+#Contact {
+    background-color: #000;
+    color: #fff;
+    padding: 50px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+#Contact h2{
+    color: white;
+}
+
+.contact-form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea,
+.contact-form input[type="submit"] {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        width: 80%;
+    }
 }
